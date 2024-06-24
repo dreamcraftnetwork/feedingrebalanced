@@ -1,0 +1,77 @@
+{
+  "_fv": 6,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Check out our website at:",
+          "color": {
+            "value": -16751104,
+            "falpha": 0.0
+          },
+          "name": "Check out our website at:",
+          "x": 267,
+          "y": 91
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "https://dreamcraftnetwork.com/",
+          "color": {
+            "value": -16751104,
+            "falpha": 0.0
+          },
+          "name": "https://dreamcraftnetwork.com/",
+          "x": 258,
+          "y": 112
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Close",
+          "onClick": {
+            "name": "RecipeBookCloseFunction"
+          },
+          "width": 100,
+          "height": 40,
+          "name": "Close",
+          "x": 372,
+          "y": 330
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-->",
+          "width": 60,
+          "height": 40,
+          "name": "-->",
+          "x": 498,
+          "y": 330
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "<--",
+          "onClick": {
+            "name": "RecipeBookOpenPageIntro"
+          },
+          "width": 60,
+          "height": 40,
+          "name": "<--",
+          "x": 282,
+          "y": 330
+        }
+      }
+    ]
+  }
+}

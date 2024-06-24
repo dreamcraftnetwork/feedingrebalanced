@@ -19,6 +19,12 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [],
-    "hasGlow": false
+    "hasGlow": false,
+    "onRightClickedInAir": {
+      "name": "RecipeBookOpenPageIntro"
+    },
+    "onRightClickedOnBlock": {
+      "name": "RecipeBookOpenPageIntro"
+    }
   }
 }

@@ -5,7 +5,7 @@
 		"0": "textures/items/recipebook_cover",
 		"1": "textures/items/recipebook_pages",
 		"3": "textures/items/faim-effet-minecraft",
-		"particle": "recipebook_cover"
+		"particle": "textures/items/recipebook_cover"
 	},
 	"elements": [
 		{
@@ -809,8 +809,31 @@
 	],
 	"display": {
 		"thirdperson_righthand": {
-			"rotation": [-139.01, -0.45, 178.61],
-			"translation": [0, 1.25, -6.5]
+			"rotation": [-157.5, 0, 180],
+			"translation": [0, -0.75, -6.25],
+			"scale": [0.5, 0.8, 0.8]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-157.5, 0, 180],
+			"translation": [0, -0.75, -6.25],
+			"scale": [0.5, 0.8, 0.8]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 180, 0]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 180, 0]
+		},
+		"ground": {
+			"rotation": [0, -12.89, -88.66]
+		},
+		"gui": {
+			"rotation": [-180, 90, -180],
+			"translation": [2.25, -3, 0]
+		},
+		"fixed": {
+			"rotation": [0, 90, 0],
+			"translation": [2.25, -2.5, 0]
 		}
 	},
 	"groups": [

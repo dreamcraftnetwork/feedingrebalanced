@@ -1,16 +1,10 @@
 {
-  "id_map": {},
+  "id_map": {
+    "GUI": 4
+  },
   "mod_elements": [
     {
       "name": "Baggettue",
-      "type": "food",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "BaggettuePartiallyEaten",
       "type": "food",
       "sortid": 2,
       "compiles": true,
@@ -18,7 +12,7 @@
       "ids": {}
     },
     {
-      "name": "BaggettueLeftovers",
+      "name": "BaggettuePartiallyEaten",
       "type": "food",
       "sortid": 3,
       "compiles": true,
@@ -26,23 +20,15 @@
       "ids": {}
     },
     {
-      "name": "BaggettueSwitchedTo2ndStage",
-      "type": "procedure",
+      "name": "BaggettueLeftovers",
+      "type": "food",
       "sortid": 4,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
+      "ids": {}
     },
     {
-      "name": "BaggettueSwitchedToLastStage",
+      "name": "BaggettueSwitchedTo2ndStage",
       "type": "procedure",
       "sortid": 5,
       "compiles": true,
@@ -58,7 +44,7 @@
       }
     },
     {
-      "name": "BaggettueSwitchLastStage",
+      "name": "BaggettueSwitchedToLastStage",
       "type": "procedure",
       "sortid": 6,
       "compiles": true,
@@ -74,9 +60,25 @@
       }
     },
     {
+      "name": "BaggettueSwitchLastStage",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
       "name": "FeedingRebalancedFood",
       "type": "tab",
-      "sortid": 7,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -84,7 +86,7 @@
     {
       "name": "BaggettueCrafting",
       "type": "recipe",
-      "sortid": 8,
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -92,10 +94,110 @@
     {
       "name": "FeedingRebalancedRecipeBook",
       "type": "item",
-      "sortid": 9,
+      "sortid": 1,
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "RecipeBookPageIntro",
+      "type": "gui",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 1
+      }
+    },
+    {
+      "name": "RecipeBookCloseFunction",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RecipeBookOpenPageIntro",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RecipeBookPage1AfterIntro",
+      "type": "gui",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 2
+      }
+    },
+    {
+      "name": "RecipeBookOpenPage1AfterIntro",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],

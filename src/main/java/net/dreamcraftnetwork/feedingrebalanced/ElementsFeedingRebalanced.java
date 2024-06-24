@@ -34,6 +34,9 @@ import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.block.Block;
 
+import net.dreamcraftnetwork.feedingrebalanced.gui.GuiRecipeBookPageIntro;
+import net.dreamcraftnetwork.feedingrebalanced.gui.GuiRecipeBookPage1AfterIntro;
+
 import java.util.function.Supplier;
 import java.util.Random;
 import java.util.Map;
@@ -125,11 +128,19 @@ public class ElementsFeedingRebalanced implements IFuelHandler, IWorldGenerator 
 	public static class GuiHandler implements IGuiHandler {
 		@Override
 		public Object getServerGuiElement(int id, EntityPlayer player, World world, int x, int y, int z) {
+			if (id == GuiRecipeBookPageIntro.GUIID)
+				return new GuiRecipeBookPageIntro.GuiContainerMod(world, x, y, z, player);
+			if (id == GuiRecipeBookPage1AfterIntro.GUIID)
+				return new GuiRecipeBookPage1AfterIntro.GuiContainerMod(world, x, y, z, player);
 			return null;
 		}
 
 		@Override
 		public Object getClientGuiElement(int id, EntityPlayer player, World world, int x, int y, int z) {
+			if (id == GuiRecipeBookPageIntro.GUIID)
+				return new GuiRecipeBookPageIntro.GuiWindow(world, x, y, z, player);
+			if (id == GuiRecipeBookPage1AfterIntro.GUIID)
+				return new GuiRecipeBookPage1AfterIntro.GuiWindow(world, x, y, z, player);
 			return null;
 		}
 	}

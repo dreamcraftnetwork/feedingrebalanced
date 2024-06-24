@@ -24,7 +24,7 @@ public class ItemBaggettue extends ElementsFeedingRebalanced.ModElement {
 	@GameRegistry.ObjectHolder("feedingrebalanced:baggettue")
 	public static final Item block = null;
 	public ItemBaggettue(ElementsFeedingRebalanced instance) {
-		super(instance, 1);
+		super(instance, 2);
 	}
 
 	@Override
