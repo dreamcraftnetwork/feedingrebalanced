@@ -101,6 +101,7 @@
     "websiteURL": "https://dreamcraftnetwork.com",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
+    "modPicture": "faim-effet-minecraft",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
