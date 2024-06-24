@@ -80,6 +80,22 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "BaggettueCrafting",
+      "type": "recipe",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FeedingRebalancedRecipeBook",
+      "type": "item",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -89,6 +105,7 @@
       "item.baggettuepartiallyeaten.name": "Baggettue Partially Eaten",
       "item.baggettueleftovers.name": "Baggettue Leftovers",
       "item.baggettue.name": "Baggettue",
+      "item.feedingrebalancedrecipebook.name": "Feeding Rebalanced Recipe Book",
       "itemGroup.tabfeedingrebalancedfood": "Feeding Rebalanced Food"
     }
   },

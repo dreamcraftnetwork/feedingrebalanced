@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "recipebook_cover",
+        "1": "recipebook_pages",
+        "3": "faim-effet-minecraft"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "group": "feedingrebalanced",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    " 4 ",
+    "6  "
+  ],
+  "key": {
+    "2": {
+      "item": "minecraft:wheat"
+    },
+    "4": {
+      "item": "minecraft:wheat"
+    },
+    "6": {
+      "item": "minecraft:wheat"
+    }
+  },
+  "result": {
+    "item": "feedingrebalanced:baggettue",
+    "count": 1
+  }
+}
