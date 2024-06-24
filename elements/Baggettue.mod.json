@@ -1,0 +1,24 @@
+{
+  "_fv": 6,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "bread",
+    "customModelName": "Normal",
+    "name": "Baggettue",
+    "creativeTab": {
+      "value": "CUSTOM:FeedingRebalancedFood"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 5,
+    "saturation": 6.0,
+    "eatingSpeed": 32,
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "BaggettueSwitchedTo2ndStage"
+    }
+  }
+}
