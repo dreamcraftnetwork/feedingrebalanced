@@ -1,0 +1,9 @@
+{
+  "parent": "feedingrebalanced:custom/farmers_sack",
+  "textures": {
+    "all": "feedingrebalanced:blocks/farmersstorageitem",
+    "particle": "feedingrebalanced:blocks/farmersstorageitem",
+    "0": "feedingrebalanced:blocks/inner_top",
+    "1": "feedingrebalanced:blocks/farmers_outer"
+  }
+}

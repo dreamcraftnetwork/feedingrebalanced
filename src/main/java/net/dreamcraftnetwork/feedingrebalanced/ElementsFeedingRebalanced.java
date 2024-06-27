@@ -40,6 +40,7 @@ import net.dreamcraftnetwork.feedingrebalanced.gui.GuiPage4Gui;
 import net.dreamcraftnetwork.feedingrebalanced.gui.GuiPage3Gui;
 import net.dreamcraftnetwork.feedingrebalanced.gui.GuiPage2Gui;
 import net.dreamcraftnetwork.feedingrebalanced.gui.GuiPage1Gui;
+import net.dreamcraftnetwork.feedingrebalanced.gui.GuiFarmersStorageGui;
 
 import java.util.function.Supplier;
 import java.util.Random;
@@ -144,6 +145,8 @@ public class ElementsFeedingRebalanced implements IFuelHandler, IWorldGenerator 
 				return new GuiPage5Gui.GuiContainerMod(world, x, y, z, player);
 			if (id == GuiPage6Gui.GUIID)
 				return new GuiPage6Gui.GuiContainerMod(world, x, y, z, player);
+			if (id == GuiFarmersStorageGui.GUIID)
+				return new GuiFarmersStorageGui.GuiContainerMod(world, x, y, z, player);
 			return null;
 		}
 
@@ -161,6 +164,8 @@ public class ElementsFeedingRebalanced implements IFuelHandler, IWorldGenerator 
 				return new GuiPage5Gui.GuiWindow(world, x, y, z, player);
 			if (id == GuiPage6Gui.GUIID)
 				return new GuiPage6Gui.GuiWindow(world, x, y, z, player);
+			if (id == GuiFarmersStorageGui.GUIID)
+				return new GuiFarmersStorageGui.GuiWindow(world, x, y, z, player);
 			return null;
 		}
 	}

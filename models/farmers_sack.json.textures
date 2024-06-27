@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "inner_top",
+        "1": "farmers_outer"
+      },
+      "name": "default"
+    }
+  }
+}

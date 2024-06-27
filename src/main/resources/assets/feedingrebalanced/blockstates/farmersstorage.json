@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "feedingrebalanced:farmersstorage"
+    },
+    "facing=north": {
+      "model": "feedingrebalanced:farmersstorage"
+    },
+    "facing=east": {
+      "model": "feedingrebalanced:farmersstorage",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "feedingrebalanced:farmersstorage",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "feedingrebalanced:farmersstorage",
+      "y": 270
+    }
+  }
+}

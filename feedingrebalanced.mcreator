@@ -1,6 +1,6 @@
 {
   "id_map": {
-    "GUI": 11
+    "GUI": 12
   },
   "mod_elements": [
     {
@@ -430,6 +430,44 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "FarmersStorage",
+      "type": "block",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FarmersStorageGui",
+      "type": "gui",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 12
+      }
+    },
+    {
+      "name": "Farmersstorageguihelp",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -439,6 +477,7 @@
       "item.steakandcarrotstew.name": "Steakand Carrot Stew",
       "item.baggettuepartiallyeaten.name": "Baggettue Partially Eaten",
       "item.baggettueleftovers.name": "Baggettue Leftovers",
+      "tile.farmersstorage.name": "Farmer\u0027s Storage",
       "item.baggettue.name": "Baggettue",
       "itemGroup.tabfeedingrebalancedutilities": "Feeding Rebalanced Utilities",
       "item.plate.name": "Plate",
