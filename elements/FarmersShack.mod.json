@@ -1,0 +1,66 @@
+{
+  "_fv": 6,
+  "_type": "structure",
+  "definition": {
+    "structure": "farmers_shack_with_loot_using_farmers_storage_v2",
+    "randomlyRotateStructure": true,
+    "surfaceDetectionType": "First motion blocking block",
+    "spawnProbability": 10000,
+    "minCountPerChunk": 1,
+    "maxCountPerChunk": 1,
+    "spawnLocation": "Ground",
+    "spawnHeightOffset": 2,
+    "spawnWorldTypes": [
+      "Surface"
+    ],
+    "restrictionBlocks": [
+      {
+        "value": "Blocks.STONE#0"
+      },
+      {
+        "value": "Blocks.GRASS"
+      },
+      {
+        "value": "Blocks.MYCELIUM"
+      },
+      {
+        "value": "Blocks.DIRT#0"
+      },
+      {
+        "value": "Blocks.DIRT#1"
+      },
+      {
+        "value": "Blocks.SANDSTONE#0"
+      },
+      {
+        "value": "Blocks.SANDSTONE#1"
+      },
+      {
+        "value": "Blocks.SANDSTONE#2"
+      },
+      {
+        "value": "Blocks.SMOOTH_SANDSTONE"
+      }
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "plains"
+      },
+      {
+        "value": "forest"
+      },
+      {
+        "value": "mushroom_fields"
+      },
+      {
+        "value": "mushroom_field_shore"
+      },
+      {
+        "value": "savanna"
+      },
+      {
+        "value": "mutated_plains"
+      }
+    ]
+  }
+}

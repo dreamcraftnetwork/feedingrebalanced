@@ -568,6 +568,78 @@
           }
         ]
       }
+    },
+    {
+      "name": "FeedingRebalancedWelcome",
+      "type": "achievement",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "PlateOfMuttonandPotato",
+      "type": "recipe",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "PlateofMuttonandPotato2",
+      "type": "recipe",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "StaffOfGrowthRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StaffOfGrowth",
+      "type": "item",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FarmersShack",
+      "type": "structure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -575,21 +647,24 @@
   "language_map": {
     "en_us": {
       "item.steakandcarrotstew.name": "Steakand Carrot Stew",
-      "item.baggettuepartiallyeaten.name": "Baggettue Partially Eaten",
-      "item.baggettueleftovers.name": "Baggettue Leftovers",
       "tile.farmersstorage.name": "Farmer\u0027s Storage",
-      "item.baggettue.name": "Baggettue",
       "itemGroup.tabfeedingrebalancedutilities": "Feeding Rebalanced Utilities",
-      "item.plate.name": "Plate",
       "item.feedingrebalancedrecipebook.name": "Feeding Rebalanced Recipe Book",
       "itemGroup.tabfeedingrebalancedfood": "Feeding Rebalanced Food",
+      "item.baggettuepartiallyeaten.name": "Baggettue Partially Eaten",
+      "item.baggettueleftovers.name": "Baggettue Leftovers",
+      "item.baggettue.name": "Baggettue",
+      "item.staffofgrowth.name": "Staff Of Growth",
+      "advancements.feedingrebalancedwelcome.title": "Feeding Rebalanced Welcome",
+      "item.plate.name": "Plate",
+      "advancements.feedingrebalancedwelcome.descr": "Welcome to the Dreamcraft Network\u0027s Feeding Rebalanced!",
       "item.plateofmuttonandpotatoes.name": "Plateof Muttonand Potatoes"
     }
   },
   "workspaceSettings": {
     "modid": "feedingrebalanced",
     "modName": "Feeding Rebalanced",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Rebalances the food recipes to a more realistic experiance and also includes better  food options",
     "author": "DreamcraftNetwork",
     "websiteURL": "https://dreamcraftnetwork.com",

@@ -3,7 +3,7 @@
     "modid": "feedingrebalanced",
     "name": "Feeding Rebalanced",
     "description": "Rebalances the food recipes to a more realistic experiance and also includes better  food options",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "credits": "Dreamcraft Network",
     "logoFile": "assets/feedingrebalanced/textures/faim-effet-minecraft.png",
     "mcversion": "1.12.2",

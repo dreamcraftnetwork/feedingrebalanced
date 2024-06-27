@@ -1,0 +1,24 @@
+{
+  "group": "feedingrebalanced",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:baked_potato"
+    },
+    "1": {
+      "item": "minecraft:cooked_mutton"
+    },
+    "2": {
+      "item": "feedingrebalanced:plate"
+    }
+  },
+  "result": {
+    "item": "feedingrebalanced:plateofmuttonandpotatoes",
+    "count": 1
+  }
+}

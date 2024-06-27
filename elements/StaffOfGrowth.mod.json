@@ -1,0 +1,27 @@
+{
+  "_fv": 6,
+  "_type": "item",
+  "definition": {
+    "renderType": 1,
+    "texture": "staffofgrowtch",
+    "customModelName": "staffofgrowtch:default",
+    "name": "Staff Of Growth",
+    "creativeTab": {
+      "value": "CUSTOM:FeedingRebalancedUtilities"
+    },
+    "stackSize": 1,
+    "enchantability": 64,
+    "useDuration": 0,
+    "toolType": 2.0,
+    "damageCount": 0,
+    "destroyAnyBlock": false,
+    "stayInGridWhenCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 5.0,
+    "specialInfo": [],
+    "hasGlow": true,
+    "onRightClickedOnBlock": {
+      "name": "StaffOfGrowthRightClickedOnBlock"
+    }
+  }
+}

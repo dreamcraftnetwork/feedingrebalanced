@@ -1,0 +1,51 @@
+{
+  "display": {
+    "background": "minecraft:textures/blocks/stone.png",
+    "icon": {
+      "item": "feedingrebalanced:feedingrebalancedrecipebook"
+    },
+    "title": {
+      "translate": "advancements.feedingrebalancedwelcome.title"
+    },
+    "description": {
+      "translate": "advancements.feedingrebalancedwelcome.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "feedingrebalancedwelcome": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:wheat",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 10,
+    "recipes": [
+      "feedingrebalanced:baggettuecrafting",
+      "feedingrebalanced:steakandcarrotstewrecipe",
+      "feedingrebalanced:platerecipe",
+      "feedingrebalanced:farmersstoragerecipe",
+      "feedingrebalanced:cheapbread",
+      "feedingrebalanced:baggettuecrafting",
+      "feedingrebalanced:steakandcarrotstewrecipe",
+      "feedingrebalanced:platerecipe",
+      "feedingrebalanced:farmersstoragerecipe",
+      "feedingrebalanced:cheapbread",
+      "feedingrebalanced:plateofmuttonandpotato",
+      "feedingrebalanced:plateofmuttonandpotato2"
+    ]
+  }
+}

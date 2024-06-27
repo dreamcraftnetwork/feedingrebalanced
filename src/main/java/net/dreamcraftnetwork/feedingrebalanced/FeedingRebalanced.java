@@ -45,7 +45,7 @@ import java.util.function.Supplier;
 @Mod(modid = FeedingRebalanced.MODID, version = FeedingRebalanced.VERSION)
 public class FeedingRebalanced {
 	public static final String MODID = "feedingrebalanced";
-	public static final String VERSION = "1.0.0";
+	public static final String VERSION = "1.1.0";
 	public static final SimpleNetworkWrapper PACKET_HANDLER = NetworkRegistry.INSTANCE.newSimpleChannel("feedingrebalanced:a");
 	@SidedProxy(clientSide = "net.dreamcraftnetwork.feedingrebalanced.ClientProxyFeedingRebalanced", serverSide = "net.dreamcraftnetwork.feedingrebalanced.ServerProxyFeedingRebalanced")
 	public static IProxyFeedingRebalanced proxy;
