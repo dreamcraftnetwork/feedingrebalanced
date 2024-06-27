@@ -1,0 +1,48 @@
+{
+  "group": "feedingrebalanced",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:wooden_slab",
+      "data": 32767
+    },
+    "1": {
+      "item": "minecraft:wooden_slab",
+      "data": 32767
+    },
+    "2": {
+      "item": "minecraft:wooden_slab",
+      "data": 32767
+    },
+    "3": {
+      "item": "minecraft:wooden_hoe"
+    },
+    "4": {
+      "item": "minecraft:wheat"
+    },
+    "5": {
+      "item": "minecraft:wooden_hoe"
+    },
+    "6": {
+      "item": "minecraft:planks",
+      "data": 32767
+    },
+    "7": {
+      "item": "minecraft:planks",
+      "data": 32767
+    },
+    "8": {
+      "item": "minecraft:planks",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "feedingrebalanced:farmersstorage",
+    "count": 1
+  }
+}

@@ -10,36 +10,23 @@
       {
         "type": "label",
         "data": {
-          "text": "Plate",
+          "text": "Bread",
           "color": {
             "value": -16777216,
             "falpha": 0.0
           },
-          "name": "Plate",
-          "x": 390,
+          "name": "Bread",
+          "x": 409,
           "y": 96
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "plate_recipe.png",
-          "name": "plate_recipe.png",
-          "x": 282,
-          "y": 132
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "Quartz Slab x2; shapeless recipe",
-          "color": {
-            "value": -16777216,
-            "falpha": 0.0
-          },
-          "name": "Quartz Slab x2; shapeless recipe",
-          "x": 264,
-          "y": 312
+          "image": "cheapbreadrecipe.png",
+          "name": "cheapbreadrecipe.png",
+          "x": 265,
+          "y": 114
         }
       },
       {
@@ -47,13 +34,13 @@
         "data": {
           "text": "<--",
           "onClick": {
-            "name": "Page5"
+            "name": "Page7"
           },
           "width": 60,
           "height": 40,
           "name": "<--",
-          "x": 318,
-          "y": 348
+          "x": 283,
+          "y": 330
         }
       },
       {
@@ -66,22 +53,19 @@
           "width": 100,
           "height": 40,
           "name": "Close",
-          "x": 390,
-          "y": 348
+          "x": 373,
+          "y": 330
         }
       },
       {
         "type": "button",
         "data": {
           "text": "-->",
-          "onClick": {
-            "name": "Page7"
-          },
           "width": 60,
           "height": 40,
           "name": "-->",
-          "x": 498,
-          "y": 348
+          "x": 499,
+          "y": 330
         }
       }
     ]

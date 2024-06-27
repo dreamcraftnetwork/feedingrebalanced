@@ -34,6 +34,8 @@ import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.block.Block;
 
+import net.dreamcraftnetwork.feedingrebalanced.gui.GuiPage8Gui;
+import net.dreamcraftnetwork.feedingrebalanced.gui.GuiPage7Gui;
 import net.dreamcraftnetwork.feedingrebalanced.gui.GuiPage6Gui;
 import net.dreamcraftnetwork.feedingrebalanced.gui.GuiPage5Gui;
 import net.dreamcraftnetwork.feedingrebalanced.gui.GuiPage4Gui;
@@ -147,6 +149,10 @@ public class ElementsFeedingRebalanced implements IFuelHandler, IWorldGenerator 
 				return new GuiPage6Gui.GuiContainerMod(world, x, y, z, player);
 			if (id == GuiFarmersStorageGui.GUIID)
 				return new GuiFarmersStorageGui.GuiContainerMod(world, x, y, z, player);
+			if (id == GuiPage7Gui.GUIID)
+				return new GuiPage7Gui.GuiContainerMod(world, x, y, z, player);
+			if (id == GuiPage8Gui.GUIID)
+				return new GuiPage8Gui.GuiContainerMod(world, x, y, z, player);
 			return null;
 		}
 
@@ -166,6 +172,10 @@ public class ElementsFeedingRebalanced implements IFuelHandler, IWorldGenerator 
 				return new GuiPage6Gui.GuiWindow(world, x, y, z, player);
 			if (id == GuiFarmersStorageGui.GUIID)
 				return new GuiFarmersStorageGui.GuiWindow(world, x, y, z, player);
+			if (id == GuiPage7Gui.GUIID)
+				return new GuiPage7Gui.GuiWindow(world, x, y, z, player);
+			if (id == GuiPage8Gui.GUIID)
+				return new GuiPage8Gui.GuiWindow(world, x, y, z, player);
 			return null;
 		}
 	}

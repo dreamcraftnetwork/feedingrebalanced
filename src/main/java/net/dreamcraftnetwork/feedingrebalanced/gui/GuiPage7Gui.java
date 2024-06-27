@@ -23,8 +23,8 @@ import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.gui.GuiButton;
 
 import net.dreamcraftnetwork.feedingrebalanced.procedure.ProcedureRecipeBookCloseFunction;
-import net.dreamcraftnetwork.feedingrebalanced.procedure.ProcedurePage7;
-import net.dreamcraftnetwork.feedingrebalanced.procedure.ProcedurePage5;
+import net.dreamcraftnetwork.feedingrebalanced.procedure.ProcedurePage8;
+import net.dreamcraftnetwork.feedingrebalanced.procedure.ProcedurePage6;
 import net.dreamcraftnetwork.feedingrebalanced.FeedingRebalanced;
 import net.dreamcraftnetwork.feedingrebalanced.ElementsFeedingRebalanced;
 
@@ -35,11 +35,11 @@ import java.util.HashMap;
 import java.io.IOException;
 
 @ElementsFeedingRebalanced.ModElement.Tag
-public class GuiPage6Gui extends ElementsFeedingRebalanced.ModElement {
-	public static int GUIID = 11;
+public class GuiPage7Gui extends ElementsFeedingRebalanced.ModElement {
+	public static int GUIID = 13;
 	public static HashMap guistate = new HashMap();
-	public GuiPage6Gui(ElementsFeedingRebalanced instance) {
-		super(instance, 28);
+	public GuiPage7Gui(ElementsFeedingRebalanced instance) {
+		super(instance, 34);
 	}
 
 	@Override
@@ -101,7 +101,7 @@ public class GuiPage6Gui extends ElementsFeedingRebalanced.ModElement {
 			this.xSize = 176;
 			this.ySize = 166;
 		}
-		private static final ResourceLocation texture = new ResourceLocation("feedingrebalanced:textures/page6gui.png");
+		private static final ResourceLocation texture = new ResourceLocation("feedingrebalanced:textures/page7gui.png");
 		@Override
 		public void drawScreen(int mouseX, int mouseY, float partialTicks) {
 			this.drawDefaultBackground();
@@ -117,8 +117,8 @@ public class GuiPage6Gui extends ElementsFeedingRebalanced.ModElement {
 			int l = (this.height - this.ySize) / 2;
 			this.drawTexturedModalRect(k, l, 0, 0, this.xSize, this.ySize);
 			zLevel = 100.0F;
-			this.mc.renderEngine.bindTexture(new ResourceLocation("feedingrebalanced:textures/plate_recipe.png"));
-			this.drawTexturedModalRect(this.guiLeft + 16, this.guiTop + 29, 0, 0, 256, 256);
+			this.mc.renderEngine.bindTexture(new ResourceLocation("feedingrebalanced:textures/farmersstoragerecipe.png"));
+			this.drawTexturedModalRect(this.guiLeft + 6, this.guiTop + 22, 0, 0, 256, 256);
 		}
 
 		@Override
@@ -138,8 +138,9 @@ public class GuiPage6Gui extends ElementsFeedingRebalanced.ModElement {
 
 		@Override
 		protected void drawGuiContainerForegroundLayer(int par1, int par2) {
-			this.fontRenderer.drawString("Plate", 70, 11, -16777216);
-			this.fontRenderer.drawString("Quartz Slab x2; shapeless recipe", 7, 119, -16777216);
+			this.fontRenderer.drawString("Farmer's Storage Block", 25, 11, -16777216);
+			this.fontRenderer.drawString("Any Planks & Any wood slabs", 14, 91, -16777216);
+			this.fontRenderer.drawString("2 wooden hoe & 1 wheat", 22, 106, -16777216);
 		}
 
 		@Override
@@ -155,9 +156,9 @@ public class GuiPage6Gui extends ElementsFeedingRebalanced.ModElement {
 			this.guiTop = (this.height - 166) / 2;
 			Keyboard.enableRepeatEvents(true);
 			this.buttonList.clear();
-			this.buttonList.add(new GuiButton(0, this.guiLeft + 34, this.guiTop + 137, 30, 20, "<--"));
-			this.buttonList.add(new GuiButton(1, this.guiLeft + 70, this.guiTop + 137, 50, 20, "Close"));
-			this.buttonList.add(new GuiButton(2, this.guiLeft + 124, this.guiTop + 137, 30, 20, "-->"));
+			this.buttonList.add(new GuiButton(0, this.guiLeft + 10, this.guiTop + 139, 30, 20, "<--"));
+			this.buttonList.add(new GuiButton(1, this.guiLeft + 50, this.guiTop + 139, 50, 20, "Close"));
+			this.buttonList.add(new GuiButton(2, this.guiLeft + 113, this.guiTop + 138, 30, 20, "-->"));
 		}
 
 		@Override
@@ -280,7 +281,7 @@ public class GuiPage6Gui extends ElementsFeedingRebalanced.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				ProcedurePage5.executeProcedure($_dependencies);
+				ProcedurePage6.executeProcedure($_dependencies);
 			}
 		}
 		if (buttonID == 1) {
@@ -298,7 +299,7 @@ public class GuiPage6Gui extends ElementsFeedingRebalanced.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				ProcedurePage7.executeProcedure($_dependencies);
+				ProcedurePage8.executeProcedure($_dependencies);
 			}
 		}
 	}

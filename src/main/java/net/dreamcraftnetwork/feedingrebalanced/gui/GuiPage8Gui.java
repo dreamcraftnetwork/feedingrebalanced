@@ -24,7 +24,6 @@ import net.minecraft.client.gui.GuiButton;
 
 import net.dreamcraftnetwork.feedingrebalanced.procedure.ProcedureRecipeBookCloseFunction;
 import net.dreamcraftnetwork.feedingrebalanced.procedure.ProcedurePage7;
-import net.dreamcraftnetwork.feedingrebalanced.procedure.ProcedurePage5;
 import net.dreamcraftnetwork.feedingrebalanced.FeedingRebalanced;
 import net.dreamcraftnetwork.feedingrebalanced.ElementsFeedingRebalanced;
 
@@ -35,11 +34,11 @@ import java.util.HashMap;
 import java.io.IOException;
 
 @ElementsFeedingRebalanced.ModElement.Tag
-public class GuiPage6Gui extends ElementsFeedingRebalanced.ModElement {
-	public static int GUIID = 11;
+public class GuiPage8Gui extends ElementsFeedingRebalanced.ModElement {
+	public static int GUIID = 14;
 	public static HashMap guistate = new HashMap();
-	public GuiPage6Gui(ElementsFeedingRebalanced instance) {
-		super(instance, 28);
+	public GuiPage8Gui(ElementsFeedingRebalanced instance) {
+		super(instance, 38);
 	}
 
 	@Override
@@ -101,7 +100,7 @@ public class GuiPage6Gui extends ElementsFeedingRebalanced.ModElement {
 			this.xSize = 176;
 			this.ySize = 166;
 		}
-		private static final ResourceLocation texture = new ResourceLocation("feedingrebalanced:textures/page6gui.png");
+		private static final ResourceLocation texture = new ResourceLocation("feedingrebalanced:textures/page8gui.png");
 		@Override
 		public void drawScreen(int mouseX, int mouseY, float partialTicks) {
 			this.drawDefaultBackground();
@@ -117,8 +116,8 @@ public class GuiPage6Gui extends ElementsFeedingRebalanced.ModElement {
 			int l = (this.height - this.ySize) / 2;
 			this.drawTexturedModalRect(k, l, 0, 0, this.xSize, this.ySize);
 			zLevel = 100.0F;
-			this.mc.renderEngine.bindTexture(new ResourceLocation("feedingrebalanced:textures/plate_recipe.png"));
-			this.drawTexturedModalRect(this.guiLeft + 16, this.guiTop + 29, 0, 0, 256, 256);
+			this.mc.renderEngine.bindTexture(new ResourceLocation("feedingrebalanced:textures/cheapbreadrecipe.png"));
+			this.drawTexturedModalRect(this.guiLeft + 7, this.guiTop + 20, 0, 0, 256, 256);
 		}
 
 		@Override
@@ -138,8 +137,7 @@ public class GuiPage6Gui extends ElementsFeedingRebalanced.ModElement {
 
 		@Override
 		protected void drawGuiContainerForegroundLayer(int par1, int par2) {
-			this.fontRenderer.drawString("Plate", 70, 11, -16777216);
-			this.fontRenderer.drawString("Quartz Slab x2; shapeless recipe", 7, 119, -16777216);
+			this.fontRenderer.drawString("Bread", 79, 11, -16777216);
 		}
 
 		@Override
@@ -155,9 +153,9 @@ public class GuiPage6Gui extends ElementsFeedingRebalanced.ModElement {
 			this.guiTop = (this.height - 166) / 2;
 			Keyboard.enableRepeatEvents(true);
 			this.buttonList.clear();
-			this.buttonList.add(new GuiButton(0, this.guiLeft + 34, this.guiTop + 137, 30, 20, "<--"));
-			this.buttonList.add(new GuiButton(1, this.guiLeft + 70, this.guiTop + 137, 50, 20, "Close"));
-			this.buttonList.add(new GuiButton(2, this.guiLeft + 124, this.guiTop + 137, 30, 20, "-->"));
+			this.buttonList.add(new GuiButton(0, this.guiLeft + 16, this.guiTop + 128, 30, 20, "<--"));
+			this.buttonList.add(new GuiButton(1, this.guiLeft + 61, this.guiTop + 128, 50, 20, "Close"));
+			this.buttonList.add(new GuiButton(2, this.guiLeft + 124, this.guiTop + 128, 30, 20, "-->"));
 		}
 
 		@Override
@@ -280,7 +278,7 @@ public class GuiPage6Gui extends ElementsFeedingRebalanced.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				ProcedurePage5.executeProcedure($_dependencies);
+				ProcedurePage7.executeProcedure($_dependencies);
 			}
 		}
 		if (buttonID == 1) {
@@ -288,17 +286,6 @@ public class GuiPage6Gui extends ElementsFeedingRebalanced.ModElement {
 				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
 				$_dependencies.put("entity", entity);
 				ProcedureRecipeBookCloseFunction.executeProcedure($_dependencies);
-			}
-		}
-		if (buttonID == 2) {
-			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				ProcedurePage7.executeProcedure($_dependencies);
 			}
 		}
 	}
