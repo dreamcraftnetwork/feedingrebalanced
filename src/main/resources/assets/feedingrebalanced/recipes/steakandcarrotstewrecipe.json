@@ -1,0 +1,24 @@
+{
+  "group": "feedingrebalanced",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:carrot"
+    },
+    "1": {
+      "item": "minecraft:cooked_beef"
+    },
+    "2": {
+      "item": "minecraft:bowl"
+    }
+  },
+  "result": {
+    "item": "feedingrebalanced:steakandcarrotstew",
+    "count": 1
+  }
+}

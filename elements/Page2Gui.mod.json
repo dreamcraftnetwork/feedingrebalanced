@@ -1,0 +1,76 @@
+{
+  "_fv": 6,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Baguette Crafting Recipe",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Baguette Crafting Recipe",
+          "x": 300,
+          "y": 96
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "baggettue_recipe.png",
+          "name": "baggettue_recipe.png",
+          "x": 264,
+          "y": 150
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "<--",
+          "onClick": {
+            "name": "Page1"
+          },
+          "width": 60,
+          "height": 40,
+          "name": "<--",
+          "x": 282,
+          "y": 330
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Close",
+          "onClick": {
+            "name": "RecipeBookCloseFunction"
+          },
+          "width": 100,
+          "height": 40,
+          "name": "Close",
+          "x": 372,
+          "y": 330
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-->",
+          "onClick": {
+            "name": "Page3"
+          },
+          "width": 60,
+          "height": 40,
+          "name": "-->",
+          "x": 498,
+          "y": 330
+        }
+      }
+    ]
+  }
+}

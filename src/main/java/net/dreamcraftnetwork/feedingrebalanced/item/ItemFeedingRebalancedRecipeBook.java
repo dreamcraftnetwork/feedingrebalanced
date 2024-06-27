@@ -19,7 +19,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 
-import net.dreamcraftnetwork.feedingrebalanced.procedure.ProcedureRecipeBookOpenPageIntro;
+import net.dreamcraftnetwork.feedingrebalanced.procedure.ProcedurePage1;
 import net.dreamcraftnetwork.feedingrebalanced.creativetab.TabFeedingRebalancedFood;
 import net.dreamcraftnetwork.feedingrebalanced.ElementsFeedingRebalanced;
 
@@ -79,7 +79,7 @@ public class ItemFeedingRebalancedRecipeBook extends ElementsFeedingRebalanced.M
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				ProcedureRecipeBookOpenPageIntro.executeProcedure($_dependencies);
+				ProcedurePage1.executeProcedure($_dependencies);
 			}
 			return ar;
 		}
@@ -99,7 +99,7 @@ public class ItemFeedingRebalancedRecipeBook extends ElementsFeedingRebalanced.M
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				ProcedureRecipeBookOpenPageIntro.executeProcedure($_dependencies);
+				ProcedurePage1.executeProcedure($_dependencies);
 			}
 			return retval;
 		}

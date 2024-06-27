@@ -22,8 +22,9 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.gui.GuiButton;
 
-import net.dreamcraftnetwork.feedingrebalanced.procedure.ProcedureRecipeBookOpenPageIntro;
 import net.dreamcraftnetwork.feedingrebalanced.procedure.ProcedureRecipeBookCloseFunction;
+import net.dreamcraftnetwork.feedingrebalanced.procedure.ProcedurePage6;
+import net.dreamcraftnetwork.feedingrebalanced.procedure.ProcedurePage4;
 import net.dreamcraftnetwork.feedingrebalanced.FeedingRebalanced;
 import net.dreamcraftnetwork.feedingrebalanced.ElementsFeedingRebalanced;
 
@@ -34,11 +35,11 @@ import java.util.HashMap;
 import java.io.IOException;
 
 @ElementsFeedingRebalanced.ModElement.Tag
-public class GuiRecipeBookPage1AfterIntro extends ElementsFeedingRebalanced.ModElement {
-	public static int GUIID = 2;
+public class GuiPage5Gui extends ElementsFeedingRebalanced.ModElement {
+	public static int GUIID = 10;
 	public static HashMap guistate = new HashMap();
-	public GuiRecipeBookPage1AfterIntro(ElementsFeedingRebalanced instance) {
-		super(instance, 13);
+	public GuiPage5Gui(ElementsFeedingRebalanced instance) {
+		super(instance, 25);
 	}
 
 	@Override
@@ -100,7 +101,7 @@ public class GuiRecipeBookPage1AfterIntro extends ElementsFeedingRebalanced.ModE
 			this.xSize = 176;
 			this.ySize = 166;
 		}
-		private static final ResourceLocation texture = new ResourceLocation("feedingrebalanced:textures/recipebookpage1afterintro.png");
+		private static final ResourceLocation texture = new ResourceLocation("feedingrebalanced:textures/page5gui.png");
 		@Override
 		public void drawScreen(int mouseX, int mouseY, float partialTicks) {
 			this.drawDefaultBackground();
@@ -116,6 +117,8 @@ public class GuiRecipeBookPage1AfterIntro extends ElementsFeedingRebalanced.ModE
 			int l = (this.height - this.ySize) / 2;
 			this.drawTexturedModalRect(k, l, 0, 0, this.xSize, this.ySize);
 			zLevel = 100.0F;
+			this.mc.renderEngine.bindTexture(new ResourceLocation("feedingrebalanced:textures/plateofmuttonandpotatoes_2.png"));
+			this.drawTexturedModalRect(this.guiLeft + 16, this.guiTop + 29, 0, 0, 256, 256);
 		}
 
 		@Override
@@ -135,8 +138,8 @@ public class GuiRecipeBookPage1AfterIntro extends ElementsFeedingRebalanced.ModE
 
 		@Override
 		protected void drawGuiContainerForegroundLayer(int par1, int par2) {
-			this.fontRenderer.drawString("Check out our website at:", 8, 9, -16751104);
-			this.fontRenderer.drawString("https://dreamcraftnetwork.com/", 4, 19, -16751104);
+			this.fontRenderer.drawString("Plate of Mutton & Potatoes", 25, 11, -16777216);
+			this.fontRenderer.drawString("Baked Potato, 1 Mutton,1 Plate", 16, 101, -16777216);
 		}
 
 		@Override
@@ -152,9 +155,9 @@ public class GuiRecipeBookPage1AfterIntro extends ElementsFeedingRebalanced.ModE
 			this.guiTop = (this.height - 166) / 2;
 			Keyboard.enableRepeatEvents(true);
 			this.buttonList.clear();
-			this.buttonList.add(new GuiButton(0, this.guiLeft + 61, this.guiTop + 128, 50, 20, "Close"));
-			this.buttonList.add(new GuiButton(1, this.guiLeft + 124, this.guiTop + 128, 30, 20, "-->"));
-			this.buttonList.add(new GuiButton(2, this.guiLeft + 16, this.guiTop + 128, 30, 20, "<--"));
+			this.buttonList.add(new GuiButton(0, this.guiLeft + 25, this.guiTop + 128, 30, 20, "<--"));
+			this.buttonList.add(new GuiButton(1, this.guiLeft + 61, this.guiTop + 128, 50, 20, "Close"));
+			this.buttonList.add(new GuiButton(2, this.guiLeft + 124, this.guiTop + 128, 30, 20, "-->"));
 		}
 
 		@Override
@@ -273,6 +276,17 @@ public class GuiRecipeBookPage1AfterIntro extends ElementsFeedingRebalanced.ModE
 			{
 				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
 				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				ProcedurePage4.executeProcedure($_dependencies);
+			}
+		}
+		if (buttonID == 1) {
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("entity", entity);
 				ProcedureRecipeBookCloseFunction.executeProcedure($_dependencies);
 			}
 		}
@@ -284,7 +298,7 @@ public class GuiRecipeBookPage1AfterIntro extends ElementsFeedingRebalanced.ModE
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				ProcedureRecipeBookOpenPageIntro.executeProcedure($_dependencies);
+				ProcedurePage6.executeProcedure($_dependencies);
 			}
 		}
 	}

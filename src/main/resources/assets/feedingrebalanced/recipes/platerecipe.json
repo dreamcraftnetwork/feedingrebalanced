@@ -1,0 +1,18 @@
+{
+  "group": "feedingrebalanced",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stone_slab",
+      "data": 7
+    },
+    {
+      "item": "minecraft:stone_slab",
+      "data": 7
+    }
+  ],
+  "result": {
+    "item": "feedingrebalanced:plate",
+    "count": 1
+  }
+}

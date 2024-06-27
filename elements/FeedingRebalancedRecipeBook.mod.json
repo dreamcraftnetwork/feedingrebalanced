@@ -21,10 +21,10 @@
     "specialInfo": [],
     "hasGlow": false,
     "onRightClickedInAir": {
-      "name": "RecipeBookOpenPageIntro"
+      "name": "Page1"
     },
     "onRightClickedOnBlock": {
-      "name": "RecipeBookOpenPageIntro"
+      "name": "Page1"
     }
   }
 }

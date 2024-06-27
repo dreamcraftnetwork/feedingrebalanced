@@ -10,53 +10,50 @@
       {
         "type": "label",
         "data": {
-          "text": " Welcome To Dreamcraft Network's",
+          "text": "Plate of Mutton & Potatoes",
           "color": {
             "value": -16777216,
             "falpha": 0.0
           },
-          "name": " Welcome To Dreamcraft Network's",
-          "x": 261,
-          "y": 93
+          "name": "Plate of Mutton & Potatoes",
+          "x": 300,
+          "y": 96
         }
       },
       {
-        "type": "label",
+        "type": "image",
         "data": {
-          "text": "Feeding Rebalanced Mod",
-          "color": {
-            "value": -16777216,
-            "falpha": 0.0
-          },
-          "name": "Feeding Rebalanced Mod",
-          "x": 304,
-          "y": 112
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "Please use this to view all",
-          "color": {
-            "value": -16777216,
-            "falpha": 0.0
-          },
-          "name": "Please use this to view all",
+          "image": "plateofmuttonandpotatoes_2.png",
+          "name": "plateofmuttonandpotatoes_2.png",
           "x": 282,
-          "y": 186
+          "y": 132
         }
       },
       {
         "type": "label",
         "data": {
-          "text": "recipes included in this mod",
+          "text": "Baked Potato, 1 Mutton,1 Plate",
           "color": {
             "value": -16777216,
             "falpha": 0.0
           },
-          "name": "recipes included in this mod",
-          "x": 274,
-          "y": 201
+          "name": "Baked Potato, 1 Mutton,1 Plate",
+          "x": 282,
+          "y": 276
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "<--",
+          "onClick": {
+            "name": "Page4"
+          },
+          "width": 60,
+          "height": 40,
+          "name": "<--",
+          "x": 300,
+          "y": 330
         }
       },
       {
@@ -76,20 +73,9 @@
       {
         "type": "button",
         "data": {
-          "text": "<--",
-          "width": 60,
-          "height": 40,
-          "name": "<--",
-          "x": 282,
-          "y": 330
-        }
-      },
-      {
-        "type": "button",
-        "data": {
           "text": "-->",
           "onClick": {
-            "name": "RecipeBookOpenPage1AfterIntro"
+            "name": "Page6"
           },
           "width": 60,
           "height": 40,

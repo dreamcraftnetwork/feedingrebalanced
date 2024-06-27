@@ -34,8 +34,12 @@ import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.block.Block;
 
-import net.dreamcraftnetwork.feedingrebalanced.gui.GuiRecipeBookPageIntro;
-import net.dreamcraftnetwork.feedingrebalanced.gui.GuiRecipeBookPage1AfterIntro;
+import net.dreamcraftnetwork.feedingrebalanced.gui.GuiPage6Gui;
+import net.dreamcraftnetwork.feedingrebalanced.gui.GuiPage5Gui;
+import net.dreamcraftnetwork.feedingrebalanced.gui.GuiPage4Gui;
+import net.dreamcraftnetwork.feedingrebalanced.gui.GuiPage3Gui;
+import net.dreamcraftnetwork.feedingrebalanced.gui.GuiPage2Gui;
+import net.dreamcraftnetwork.feedingrebalanced.gui.GuiPage1Gui;
 
 import java.util.function.Supplier;
 import java.util.Random;
@@ -128,19 +132,35 @@ public class ElementsFeedingRebalanced implements IFuelHandler, IWorldGenerator 
 	public static class GuiHandler implements IGuiHandler {
 		@Override
 		public Object getServerGuiElement(int id, EntityPlayer player, World world, int x, int y, int z) {
-			if (id == GuiRecipeBookPageIntro.GUIID)
-				return new GuiRecipeBookPageIntro.GuiContainerMod(world, x, y, z, player);
-			if (id == GuiRecipeBookPage1AfterIntro.GUIID)
-				return new GuiRecipeBookPage1AfterIntro.GuiContainerMod(world, x, y, z, player);
+			if (id == GuiPage1Gui.GUIID)
+				return new GuiPage1Gui.GuiContainerMod(world, x, y, z, player);
+			if (id == GuiPage2Gui.GUIID)
+				return new GuiPage2Gui.GuiContainerMod(world, x, y, z, player);
+			if (id == GuiPage3Gui.GUIID)
+				return new GuiPage3Gui.GuiContainerMod(world, x, y, z, player);
+			if (id == GuiPage4Gui.GUIID)
+				return new GuiPage4Gui.GuiContainerMod(world, x, y, z, player);
+			if (id == GuiPage5Gui.GUIID)
+				return new GuiPage5Gui.GuiContainerMod(world, x, y, z, player);
+			if (id == GuiPage6Gui.GUIID)
+				return new GuiPage6Gui.GuiContainerMod(world, x, y, z, player);
 			return null;
 		}
 
 		@Override
 		public Object getClientGuiElement(int id, EntityPlayer player, World world, int x, int y, int z) {
-			if (id == GuiRecipeBookPageIntro.GUIID)
-				return new GuiRecipeBookPageIntro.GuiWindow(world, x, y, z, player);
-			if (id == GuiRecipeBookPage1AfterIntro.GUIID)
-				return new GuiRecipeBookPage1AfterIntro.GuiWindow(world, x, y, z, player);
+			if (id == GuiPage1Gui.GUIID)
+				return new GuiPage1Gui.GuiWindow(world, x, y, z, player);
+			if (id == GuiPage2Gui.GUIID)
+				return new GuiPage2Gui.GuiWindow(world, x, y, z, player);
+			if (id == GuiPage3Gui.GUIID)
+				return new GuiPage3Gui.GuiWindow(world, x, y, z, player);
+			if (id == GuiPage4Gui.GUIID)
+				return new GuiPage4Gui.GuiWindow(world, x, y, z, player);
+			if (id == GuiPage5Gui.GUIID)
+				return new GuiPage5Gui.GuiWindow(world, x, y, z, player);
+			if (id == GuiPage6Gui.GUIID)
+				return new GuiPage6Gui.GuiWindow(world, x, y, z, player);
 			return null;
 		}
 	}

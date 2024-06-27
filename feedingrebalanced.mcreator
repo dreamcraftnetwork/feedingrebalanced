@@ -1,6 +1,6 @@
 {
   "id_map": {
-    "GUI": 4
+    "GUI": 11
   },
   "mod_elements": [
     {
@@ -100,16 +100,6 @@
       "ids": {}
     },
     {
-      "name": "RecipeBookPageIntro",
-      "type": "gui",
-      "sortid": 10,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {
-        "0": 1
-      }
-    },
-    {
       "name": "RecipeBookCloseFunction",
       "type": "procedure",
       "sortid": 11,
@@ -126,51 +116,61 @@
       }
     },
     {
-      "name": "RecipeBookOpenPageIntro",
-      "type": "procedure",
+      "name": "Page1Gui",
+      "type": "gui",
       "sortid": 12,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "int"
-          },
-          {
-            "name": "y",
-            "type": "int"
-          },
-          {
-            "name": "z",
-            "type": "int"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+      "ids": {
+        "0": 6
       }
     },
     {
-      "name": "RecipeBookPage1AfterIntro",
-      "type": "gui",
+      "name": "Page1",
+      "type": "procedure",
       "sortid": 13,
       "compiles": true,
       "locked_code": false,
-      "ids": {
-        "0": 2
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       }
     },
     {
-      "name": "RecipeBookOpenPage1AfterIntro",
-      "type": "procedure",
+      "name": "Page2Gui",
+      "type": "gui",
       "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 7
+      }
+    },
+    {
+      "name": "Page2",
+      "type": "procedure",
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -198,17 +198,253 @@
           }
         ]
       }
+    },
+    {
+      "name": "SteakandCarrotStew",
+      "type": "food",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SteakAndCarrotStewRecipe",
+      "type": "recipe",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Page3Gui",
+      "type": "gui",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 8
+      }
+    },
+    {
+      "name": "Page3",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PlateofMuttonandPotatoes",
+      "type": "food",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Plate",
+      "type": "item",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "PlateofMuttonandPotatoesFoodEaten",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Page4Gui",
+      "type": "gui",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 9
+      }
+    },
+    {
+      "name": "Page4",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Page5Gui",
+      "type": "gui",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 10
+      }
+    },
+    {
+      "name": "Page5",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Platerecipe",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Page6Gui",
+      "type": "gui",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 11
+      }
+    },
+    {
+      "name": "Page6",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FeedingRebalancedUtilities",
+      "type": "tab",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.steakandcarrotstew.name": "Steakand Carrot Stew",
       "item.baggettuepartiallyeaten.name": "Baggettue Partially Eaten",
       "item.baggettueleftovers.name": "Baggettue Leftovers",
       "item.baggettue.name": "Baggettue",
+      "itemGroup.tabfeedingrebalancedutilities": "Feeding Rebalanced Utilities",
+      "item.plate.name": "Plate",
       "item.feedingrebalancedrecipebook.name": "Feeding Rebalanced Recipe Book",
-      "itemGroup.tabfeedingrebalancedfood": "Feeding Rebalanced Food"
+      "itemGroup.tabfeedingrebalancedfood": "Feeding Rebalanced Food",
+      "item.plateofmuttonandpotatoes.name": "Plateof Muttonand Potatoes"
     }
   },
   "workspaceSettings": {

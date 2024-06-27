@@ -1,5 +1,9 @@
+item.steakandcarrotstew.name=Steakand Carrot Stew
 item.baggettuepartiallyeaten.name=Baggettue Partially Eaten
 item.baggettueleftovers.name=Baggettue Leftovers
 item.baggettue.name=Baggettue
+itemGroup.tabfeedingrebalancedutilities=Feeding Rebalanced Utilities
+item.plate.name=Plate
 item.feedingrebalancedrecipebook.name=Feeding Rebalanced Recipe Book
 itemGroup.tabfeedingrebalancedfood=Feeding Rebalanced Food
+item.plateofmuttonandpotatoes.name=Plateof Muttonand Potatoes
